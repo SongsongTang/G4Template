@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
 
-project(Template)
+project(Main)
 
 find_package(Geant4 REQUIRED ui_all vis_all)
 
@@ -18,8 +18,8 @@ file(GLOB DATA_FILES "*.dat")
 
 file(COPY ${DATA_FILES} DESTINATION ${PROJECT_BINARY_DIR})
 
-add_executable(temp temp.cc ${sources} ${headers})
+add_executable(main main.cc ${sources} ${headers})
 
-target_link_libraries(temp ${Geant4_LIBRARIES})
+target_link_libraries(main ${Geant4_LIBRARIES})
 
-add_custom_target(Template DEPENDS temp)
+add_custom_target(Main DEPENDS main)
