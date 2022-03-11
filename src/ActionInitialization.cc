@@ -14,7 +14,7 @@ ActionInitialization::~ActionInitialization()
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void ActionInitialization::BuildForMaster() const
-// There should be one RunAction class
+// There should be one RunAction class for Multithreading
 {
 }
 
